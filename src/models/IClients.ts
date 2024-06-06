@@ -1,4 +1,4 @@
 import { Response } from "express";
 export interface IClients {
-  [key: string]: Response[];
+  [key: string]: { [key: string]: Response[] };
 }
