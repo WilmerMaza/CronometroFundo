@@ -7,7 +7,7 @@ import {
 const router = express.Router();
 
 // Iniciar cronómetro
-router.post("/cronometro/:event/:partidaId", eventCronometro);
-router.get("/cronometro/:partidaId", getCronometroEvents);
+router.post("/cronometro/:platform/:event/:partidaId", eventCronometro);
+router.get("/cronometro/:platform/:partidaId", getCronometroEvents);
 
 export default router;
